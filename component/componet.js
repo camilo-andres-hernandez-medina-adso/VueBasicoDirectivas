@@ -2,7 +2,8 @@ export default{
 
     data(){
         return{
-            mensaje:"uwu"  
+            mensaje:"uwu",
+            gano: false
         }
     }
 }

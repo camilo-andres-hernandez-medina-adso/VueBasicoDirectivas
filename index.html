@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>wuw</title>
     <script src="app.js" type="module"></script>
 </head>
-<body style="background-color: blueviolet;">
+<body>
+<body style="background-color: blueviolet;" v-model="color">
     <div id="app">
-        <div v-html="avanzado"></div>
-        <div v-html="Intermedio"></div>
-        <div v-html="basico"></div>
-        <input type="text" v-model="mensaje">
-        <h1>{{mensaje}}</h1>
         <strong v-text="mensaje"></strong>
+        <label>Elija la <strong>correcta</strong></label>
+        <div>
+            <input type="radio" v-model="gano" v-model="perdio" v-bind:value="true" >1
+            <input type="radio" v-model="gano" v-bind:value="false" > 2
+        </div>
+        <div v-show="gano" class="info"> 
+            es un uwu?
+        </div>
     </div>
 </body>
 </html>
