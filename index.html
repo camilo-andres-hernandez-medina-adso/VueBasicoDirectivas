@@ -9,7 +9,12 @@
 </head>
 <body style="background-color: blueviolet;">
     <div id="app">
-        <h1 v-text="mensaje"></h1>
+        <div v-html="avanzado"></div>
+        <div v-html="Intermedio"></div>
+        <div v-html="basico"></div>
+        <input type="text" v-model="mensaje">
+        <h1>{{mensaje}}</h1>
+        <strong v-text="mensaje"></strong>
     </div>
 </body>
 </html>
